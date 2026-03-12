@@ -71,14 +71,14 @@ with eeo.ClassInAPI(school_uid=123456, school_secret="your_secret") as api:
 
 ## 初始化参数
 
-| 参数 | 类型 | 必填 | 说明 |
-|---|---|---|---|
-| `school_uid` | `int` | ✅ | 学校账号 UID |
-| `school_secret` | `str` | ✅ | API 密钥 |
-| `domain` | `str` | ❌ | API 域名，默认 `https://api.eeo.cn` |
+| 参数 | 类型 | 必填 | 说明                                                                      |
+|---|---|---|-------------------------------------------------------------------------|
+| `school_uid` | `int` | ✅ | 学校账号 UID                                                                |
+| `school_secret` | `str` | ✅ | API 密钥                                                                  |
+| `domain` | `str` | ❌ | API 域名，默认值为 `https://api.eeo.cn` 当默认域名故障时可切换至备用域名 `https://api2.eeo.cn` |
 
 > [!NOTE]
-> `school_uid` 和 `school_secret` 可在 ClassIn 管理后台的「开发者设置」中获取。
+> `school_uid` 和 `school_secret` 可在 eeo.cn 管理后台 ➡️ 我的学校 ➡️ API对接 ➡️ API对接密钥 中获取。
 
 ## 接口速查
 

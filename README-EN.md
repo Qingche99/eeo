@@ -71,14 +71,14 @@ with eeo.ClassInAPI(school_uid=123456, school_secret="your_secret") as api:
 
 ## Constructor Parameters
 
-| Parameter | Type | Required | Description |
-|---|---|---|---|
-| `school_uid` | `int` | ✅ | School account UID |
-| `school_secret` | `str` | ✅ | API secret key |
-| `domain` | `str` | ❌ | API domain, default `https://api.eeo.cn` |
+| Parameter | Type | Required | Description                                                                                                                          |
+|---|---|---|--------------------------------------------------------------------------------------------------------------------------------------|
+| `school_uid` | `int` | ✅ | School account UID                                                                                                                   |
+| `school_secret` | `str` | ✅ | API secret key                                                                                                                       |
+| `domain` | `str` | ❌ | API domain, defaults to `https://api.eeo.cn`. If the default domain fails, you can switch to the backup domain `https://api2.eeo.cn` |
 
 > [!NOTE]
-> You can find `school_uid` and `school_secret` in the ClassIn admin panel under "Developer Settings".
+> You can obtain school_uid and school_secret in the ClassIn admin panel under "Profile ➡️ API ➡️ API Integration Key".
 
 ## API Reference
 
